@@ -22,11 +22,7 @@ class ScrumStore {
     }
 
     func load() async throws {
-        let url = try fileURL()
-        
-        print(url)
-        
-        guard let data = try? Data(contentsOf: url) else {
+        guard let data = try? Data(contentsOf: fileURL()) else {
             scrums = []
             return
         }
