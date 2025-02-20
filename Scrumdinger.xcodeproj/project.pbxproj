@@ -29,7 +29,6 @@
 		8A8EF0FA2D550BE2004F4EC3 /* ScrumEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8EF0F92D550BE2004F4EC3 /* ScrumEditView.swift */; };
 		8A9320182D5E44610062510D /* ScrumCreateSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9320172D5E44610062510D /* ScrumCreateSheet.swift */; };
 		8A93201A2D5E470B0062510D /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9320192D5E470B0062510D /* History.swift */; };
-		8A93201C2D5E4B130062510D /* BUGS.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A93201B2D5E4B130062510D /* BUGS.md */; };
 		8AA5FB482D52697C00CF5CE5 /* ScrumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5FB472D52697C00CF5CE5 /* ScrumDetailView.swift */; };
 		8AC7F9AF2D56482D00FBAFA0 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC7F9AE2D56482D00FBAFA0 /* ThemeView.swift */; };
 		8AD5AF122D5F3FBF005775AD /* ScrumEditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5AF112D5F3FBF005775AD /* ScrumEditSheet.swift */; };
@@ -62,7 +61,6 @@
 		8A8EF0F92D550BE2004F4EC3 /* ScrumEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumEditView.swift; sourceTree = "<group>"; };
 		8A9320172D5E44610062510D /* ScrumCreateSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumCreateSheet.swift; sourceTree = "<group>"; };
 		8A9320192D5E470B0062510D /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
-		8A93201B2D5E4B130062510D /* BUGS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BUGS.md; sourceTree = "<group>"; };
 		8AA5FB472D52697C00CF5CE5 /* ScrumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumDetailView.swift; sourceTree = "<group>"; };
 		8AC7F9AE2D56482D00FBAFA0 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		8AD5AF112D5F3FBF005775AD /* ScrumEditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumEditSheet.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 			children = (
 				8A1EB4CC2D4E5BBF003BE713 /* Scrumdinger */,
 				8A443D932D4FA5160015251B /* Scrumdinger.app */,
-				8A93201B2D5E4B130062510D /* BUGS.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,7 +219,6 @@
 				8A89D31B2D5CAB3E000BBC68 /* ding.wav in Resources */,
 				8A1EB4CD2D4E5BBF003BE713 /* Assets.xcassets in Resources */,
 				8A1EB4CE2D4E5BBF003BE713 /* Preview Assets.xcassets in Resources */,
-				8A93201C2D5E4B130062510D /* BUGS.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
