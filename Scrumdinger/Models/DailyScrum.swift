@@ -44,8 +44,8 @@ struct DailyScrum: Identifiable, Codable {
         }
     }
     
-    mutating func updateHistory() {
-        let scrumHistory = History(attendees: attendees)
+    mutating func updateHistory(transcript: String) {
+        let scrumHistory = History(attendees: attendees, transcript: transcript)
         history.insert(scrumHistory, at: 0)
     }
     

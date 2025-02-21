@@ -19,6 +19,10 @@ struct MeetingTimerView: View {
                     Text(scrumTimer.activeSpeakerName)
                         .font(.title)
                     Text("is speaking")
+                    Image(systemName: "mic")
+                        .font(.title)
+                        .padding(.top)
+                        .accessibilityLabel("with transcription")
                 }
                 .foregroundStyle(theme.accentColor)
                 .accessibilityElement(children: .combine)
