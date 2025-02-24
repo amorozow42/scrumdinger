@@ -156,8 +156,9 @@ final class ScrumTimer {
 
 extension DailyScrum {
     var speakers: [ScrumTimer.Speaker] {
-        return attendees.map {
-            ScrumTimer.Speaker(name: $0.name, isCompleted: false)
-        }
+        return availableAttendees
+            .map {
+                ScrumTimer.Speaker(name: $0.name, isCompleted: false)
+            }
     }
 }

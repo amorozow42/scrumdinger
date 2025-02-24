@@ -12,7 +12,12 @@ struct DailyScrum: Identifiable, Codable {
     struct Attendee: Identifiable, Codable {
         let id: UUID
         let name: String
+        var isAvailable: Bool = true
         
+        enum CodingKeys: String, CodingKey {
+            case id, name
+        }
+
         init(id: UUID = UUID(), name: String) {
             self.id = id
             self.name = name
@@ -44,8 +49,12 @@ struct DailyScrum: Identifiable, Codable {
         }
     }
     
+    var availableAttendees: [Attendee] {
+        attendees.filter { $0.isAvailable }
+    }
+    
     mutating func updateHistory(transcript: String) {
-        let scrumHistory = History(attendees: attendees, transcript: transcript)
+        let scrumHistory = History(attendees: availableAttendees, transcript: transcript)
         history.insert(scrumHistory, at: 0)
     }
     

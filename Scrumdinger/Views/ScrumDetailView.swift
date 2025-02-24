@@ -37,8 +37,10 @@ struct ScrumDetailView: View {
                 .accessibilityElement(children: .combine)
             }
             Section(header: Text("Attendees")) {
-                ForEach(scrum.attendees) { attendee in
-                    Label("\(attendee.name)", systemImage: "person")
+                ForEach($scrum.attendees) { $attendee in
+                    Toggle(isOn: $attendee.isAvailable) {
+                        Label("\(attendee.name)", systemImage: "person")
+                    }
                 }
             }
             Section(header: Text("History")) {
