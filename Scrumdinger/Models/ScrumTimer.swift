@@ -111,8 +111,15 @@ final class ScrumTimer {
             let previousSpeakerIndex = index - 1
             speakers[previousSpeakerIndex].isCompleted = true
         }
+
         secondsElapsedForSpeaker = 0
-        guard index < speakers.count else { return }
+
+        // Last speaker finished
+        guard index < speakers.count else {
+            stopScrum()
+            return
+        }
+
         speakerIndex = index
 
         secondsElapsed = index * secondsPerSpeaker
