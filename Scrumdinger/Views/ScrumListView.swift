@@ -10,7 +10,6 @@ import SwiftUI
 struct ScrumListView: View {
     @Binding var scrums: [DailyScrum]
     @State private var presentNewScrum = false
-    @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
         NavigationStack {
